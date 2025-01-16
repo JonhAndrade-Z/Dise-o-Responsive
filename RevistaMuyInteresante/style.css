@@ -117,12 +117,48 @@ img {
     max-width: 100vw;
     max-height: 100%;
     margin: 0;
-    padding: 0% 0% 100% 0% ;
+    padding: 0% 0% 0% 0%;
     background-color: aqua;
     display: flex;
 }
 
-.gatoGordo {
-    height: 70vh;
-    width: 40vw;
+.container img {
+    width: 50vw;
+    height: 100vh;
+    margin: 2% 0% 2% 2%;
+    padding: 0%;
+    float: left;
+    border-radius: 10%;
+    display: flex;
+}
+
+.container p {
+    text-align: center;
+    float: right;
+    margin: 5%;
+}
+
+.container2 {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.caja {
+    text-align: center;
+    box-sizing: border-box;
+    width: 23%;
+    overflow: hidden;
+
+}
+
+.caja img {
+    display: block;
+    width: 20vw;
+    height: 15vh;
+    margin: 5% 5% 5% 5%;
+    padding: 0;
+    overflow: hidden;
 }
