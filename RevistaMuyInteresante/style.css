@@ -142,9 +142,10 @@ body {
         text-align: center;
         margin: 10% 0% 0% 0%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 22px;
+        font-size: 19px;
         padding: 2% 5% 0% 5%;
-        height: 50vh;
+        height: 100%;
+      
     }
 
     .container h1 {
