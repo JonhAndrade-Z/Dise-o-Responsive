@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    max-width: 100vw;
-    max-height: 100vh;
     box-sizing: border-box;
 }
 
@@ -120,14 +118,14 @@ body {
 
     .container {
         max-width: 100vw;
-        max-height: 100%;
+        height: auto;
         margin: 0% 5% 0% 5%;
-        padding: 0% 0% 0% 0%;
-        display: flex;
+        padding: 0;
+        /* display: flex; */
     }
 
     .imagen_gato {
-        width: 40vw;
+        width: 45vw;
         height: auto;
         margin: 2% 0% 2% 0%;
         padding: 0%;
@@ -194,6 +192,7 @@ body {
         padding: 0;
         overflow: hidden;
         border-radius: 10%;
+        cursor: pointer;
     }
 
     .caja p {
@@ -213,6 +212,12 @@ body {
         margin: 0% 5% 10% 5%;
     }
 
+    .linea2 {
+        width: 90vw;
+        display: flex;
+        margin: 0% 0% 0% 2%;
+    }
+
     .texto_container3 {
         align-items: center;
         justify-self: center;
@@ -220,8 +225,8 @@ body {
         width: 100%;
         height: auto;
         margin-top: 2%;
-       
     }
+
     .texto_container3 h2 {
         font-family: 'Times New Roman', Times, serif;
         border-bottom: 2px solid red;
@@ -229,11 +234,8 @@ body {
         display: inline-block;
         margin-bottom: 1%;
     }
-    .linea2 {
-        width: 90vw;
-        display: flex;
-        margin: 0% 0% 0% 2%;
-    }
+
+
 
     .img_container3 {
         width: 100%;
@@ -242,6 +244,7 @@ body {
         padding: 0%;
 
     }
+
     .img_container3 img {
         width: 88vw;
         height: auto;
@@ -250,7 +253,8 @@ body {
         border-radius: 15%;
         display: flex;
     }
-    .texto2_container3{
+
+    .texto2_container3 {
         align-items: center;
         justify-self: center;
         text-align: center;
@@ -258,6 +262,7 @@ body {
         height: auto;
         margin-top: 2%;
     }
+
     .texto2_container3 h4 {
         font-family: 'Times New Roman', Times, serif;
         font-size: 20px;
@@ -276,41 +281,64 @@ body {
 
     .cont4 {
         display: flex;
-        gap: 20px;
-        /* Espacio entre las cajas*/
+        justify-content: space-between;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
         flex-wrap: wrap;
-        /* Permite mover las cajas a la siguiente línea si es necesario*/
-        justify-content: center;
-        /* Centra las cajas horizontalmente*/
-        margin: 25% 0% 0% 0%;
-        /* Centra el contenedor */
-        max-width: 100vw;
-        max-height: 100vh;
+        margin: 0% 5% 0% 5%;
+
+        /* background-color: greenyellow; */
     }
 
     .caja2 {
+        text-align: center;
         box-sizing: border-box;
-        /* Asegura que padding y border no afecten el tamaño */
-        max-width: 45%;
-        /* Ancho máximo para las cajas */
+        width: 47%;
+        overflow: hidden;
+        margin-top: 2%;
+    }
+
+    .imagen_cajas2 {
+        width: 100%;
+        /* Mantén el ancho basado en el contenedor padre */
+        padding-top: 56.25%;
+        /* Proporción 16:9 (puedes ajustarlo según necesites) */
+        position: relative;
+        /* Necesario para posicionar las imágenes */
+        overflow: hidden;
+        /* Esconde el contenido que se sale del contenedor */
+        border-radius: 10px;
+        /* Bordes redondeados */
+
 
     }
 
-    .caja2 img {
+    .imagen_cajas2 img {
         width: 100%;
-        height: 80%;
+        /* Haz que las imágenes ocupen todo el ancho */
+        height: 100%;
         /* Mantiene la proporción */
         border-radius: 10px;
         /* Bordes redondeados */
-        margin: 0% 0% 0% 0%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+
     }
 
-    .caja2 p {
-        text-align: center;
+    .texto_caja2 {
+        margin: 0;
+        padding: 0;
+        /* estoy aqui, seguir revisando */
         box-sizing: border-box;
-        width: 80%;
-        margin-bottom: 2%;
-        margin: 2% 5% 0% 5%;
+        display: flex;
+
+    }
+
+    .texto_caja2 p {
+        text-align: center;
         font-size: 20px;
     }
 }
@@ -346,7 +374,7 @@ body {
         background-color: #b42436;
         justify-content: space-between;
         width: 100vw;
-        height: 20vh;
+        height: auto;
         padding: 0;
         margin: 0;
         position: static;
@@ -374,11 +402,11 @@ body {
         white-space: nowrap;
     }
 
-    .logo,
-    img {
-        width: 30vw;
-        height: 20vh;
-        margin: 0% 0% 0% 28%;
+    .logo img {
+        width: 50vw;
+        height: auto;
+        margin: 0;
+
     }
 
     .botton_boletin {
@@ -424,48 +452,52 @@ body {
 
     .container {
         max-width: 100vw;
-        max-height: 100vh;
+        height: auto;
         margin: 0% 2% 0% 2%;
         padding: 0% 0% 0% 0%;
-
+        display: block;
     }
 
-    .container img {
+    .imagen_gato {
         width: 96vw;
-        height: 60vh;
-        margin: 2% 0% 0% 0%;
+        height: auto;
+        margin: 2% 0% 2% 0%;
         padding: 0%;
-        border-radius: 10%;
-        display: flex;
+        /* modificar este valor */
     }
 
-    .container h1 {
-        margin: 10% 0% 0% 5%;
+    .imagen_gato img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .texto_principal {
+        text-align: center;
+        margin: 2% 2%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 15px;
-        padding: 0% 0% 0% 0%;
+        font-size: 25px;
+        height: auto;
+        width: 96%;
+    }
+
+    .texto_principal h1 {
+        margin: 5% 0% 2% 0%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        padding: 0;
         height: 50%;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
-    }
 
-    .container p {
-        text-align: center;
-        margin: 2% 5% 0% 5%;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 20px;
-        padding: 0;
-        height: 50vh;
-        display: flex;
     }
-
 
 
     .linea {
         width: 95vw;
         display: flex;
-        margin: 15% 2% 0% 2%;
+        margin: 5% 2% 0% 2%;
         /* el margen top hay que revisarlo en la version final de movil */
     }
 
@@ -490,7 +522,7 @@ body {
         display: block;
         width: 40vw;
         height: 25vh;
-        margin: 5% 5% 5% 5%;
+        margin: 5%;
         padding: 0;
         overflow: hidden;
         border-radius: 10%;
@@ -510,52 +542,76 @@ body {
         flex-direction: column;
         /* Acomoda los elementos en una sola columna  */
         max-width: 100%;
-        max-height: 100%;
-        margin: 10% 5% 0% 5%;
-        align-items: center
+        height: auto;
+        margin: 5% 5% 0% 5%;
+        align-items: center;
     }
 
     .linea2 {
-        width: 90vw;
+        width: 95vw;
         display: flex;
-        margin: 0% 0% 0% 2%;
+        margin: 5% 2% 0% 2%;
     }
 
-    .container3 h2 {
-        margin: 55% 0% 1% 1.1%;
+    .texto_container3 {
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .texto_container3 h2 {
+        margin: 1% 0% 1% 0%;
         font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
+        display: inline-block;
         padding: 0;
 
     }
 
-
-    .container3 img {
-        width: 88vw;
-        height: 80vh;
-        margin: 2% 5% 2% 5%;
+    .img_container3 {
+        width: 100%;
+        height: auto;
         padding: 0%;
-        border-radius: 10%;
-        display: flex;
+        margin-top: 2%;
     }
 
-    .container3 h4 {
-        margin: 5% auto 1% auto;
+
+    .img_container3 img {
+        width: 90vw;
+        height: auto;
+        padding: 0%;
+        border-radius: 10%;
+    }
+
+    .texto2_container3 {
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .texto2_container3 h4 {
+        margin: 5% 0% 3% 0%;
         /* Centrado automático  */
         font-family: 'Times New Roman', Times, serif;
-        font-size: 13px;
+        font-size: 15px;
         text-align: center;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
     }
 
-    .container3 p {
+    .texto2_container3 p {
         text-align: center;
         float: none;
         font-family: 'Times New Roman', Times, serif;
         font-size: 50px;
-        margin: 0% 5% 0% 5%;
+        margin: 0% 5% 2% 5%;
     }
 
     .cont4 {
@@ -564,10 +620,17 @@ body {
         /* Espacio entre las cajas  */
         flex-wrap: wrap;
         /* Permite mover las cajas a la siguiente línea si es necesario  */
+
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
         justify-content: center;
-        /* Centra las cajas horizontalmente  */
-        margin: 11% 0% 0% 0%;
+        /* Centra las cajas horizontalmente  puede ser space-between */
+        margin: 2% 0% 0% 0%;
         /* el margen top hay que revisarlo en la version final de movil */
+        /* background-color: green; */
+        padding-bottom: 10%;
     }
 
     .caja2 {
@@ -576,27 +639,52 @@ body {
         /* Asegura que padding y border no afecten el tamaño  */
         max-width: 45vw;
         /* Ancho máximo para las cajas  */
-        max-height: 100vh;
-
+        text-align: center;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-top: 2%;
     }
 
-    .caja2 img {
+    .imagen_cajas2 {
+        width: 100%;
+        /* Mantén el ancho basado en el contenedor padre */
+        padding-top: 56.25%;
+        /* Proporción 16:9 (puedes ajustarlo según necesites) */
+        position: relative;
+        /* Necesario para posicionar las imágenes */
+        overflow: hidden;
+        /* Esconde el contenido que se sale del contenedor */
+        border-radius: 10px;
+        /* Bordes redondeados */
+    }
+
+    .imagen_cajas2 img {
         width: 100%;
         height: 100%;
         margin: auto;
         /* Mantiene la proporción  */
         border-radius: 10px;
         /* Bordes redondeados  */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .texto_caja2 {
+        /* margin: 0; */
+        padding: 0;
+        /* estoy aqui, seguir revisando */
+        box-sizing: border-box;
+        display: flex;
+        margin: 3% 0% 2% 0%;
+
 
     }
 
-    .caja2 p {
+    .texto_caja2 p {
         text-align: center;
-        box-sizing: border-box;
-        width: 100%;
-        margin: 3% 0% 2% 0%;
         font-size: 20px;
-
     }
 
 }
@@ -633,10 +721,11 @@ body {
         background-color: #b42436;
         justify-content: space-between;
         width: 100vw;
-        height: 20vh;
+        height: auto;
         padding: 0;
         margin: 0;
         position: static;
+
     }
 
     .tercer_header {
@@ -661,11 +750,10 @@ body {
         white-space: nowrap;
     }
 
-    .logo,
-    img {
-        width: 30vw;
-        height: 20vh;
-        margin: 0% 0% 0% 28%;
+    .logo img {
+        width: 50vw;
+        height: auto;
+        margin: 0% 0% 0% 50%;
     }
 
     .botton_boletin {
@@ -695,49 +783,50 @@ body {
 
     .container {
         max-width: 100vw;
-        max-height: 100vh;
+        height: auto;
         margin: 0% 2% 0% 2%;
         padding: 0% 0% 0% 0%;
-
+        display: block;
     }
 
-    .container img {
+    .imagen_gato {
         width: 96vw;
-        height: 60vh;
-        margin: 2% 0% 0% 0%;
+        height: auto;
+        margin: 2% 0% 2% 0%;
         padding: 0%;
+    }
+
+    .imagen_gato img {
+        width: 96vw;
+        height: auto;
         border-radius: 10%;
-        display: flex;
 
     }
 
-    .container h1 {
-        margin: 10% 0% 0% 5%;
+    .texto_principal {
+        text-align: center;
+        margin: 2% 2%;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        height: auto;
+        width: 96%;
+    }
+
+    .texto_principal h1 {
+        margin: 5% 0% 3% 0%;
         font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
-        padding: 0% 0% 0% 0%;
+        padding: 0;
         height: 50%;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
     }
 
-    .container p {
-        text-align: center;
-        margin: 2% 0% 0% 0%;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: large;
-        padding: 0;
-        height: 40vh;
-        display: flex;
-    }
-
-
-
     .linea {
         width: 95vw;
         display: flex;
-        margin: 27% 2% 0% 2%;
+        margin: 0% 2% 0% 2%;
         /* el margen top hay que revisarlo en la version final de movil */
 
     }
@@ -746,7 +835,6 @@ body {
         display: flex;
         justify-content: space-between;
         max-width: 100vw;
-        max-height: 100vh;
         box-sizing: border-box;
         flex-wrap: wrap;
         margin: 0% 5% 0% 5%;
@@ -763,7 +851,7 @@ body {
         display: block;
         width: 40vw;
         height: 25vh;
-        margin: 5% 5% 5% 5%;
+        margin: 5%;
         padding: 0;
         overflow: hidden;
         border-radius: 10%;
@@ -783,51 +871,74 @@ body {
         flex-direction: column;
         /* Acomoda los elementos en una sola columna  */
         max-width: 100%;
-        max-height: 100%;
-        margin: 100% 5% 0% 5%;
+        height: auto;
+        margin: 7% 5% 0% 5%;
+        /* revisar margen top */
         align-items: center
     }
 
     .linea2 {
-        width: 90vw;
+        width: 94vw;
         display: flex;
-        margin: 0% 0% 0% 2%;
+        margin: 3% 2% 0% 2%;
     }
 
-    .container3 h2 {
-        margin: 0% 0% 1% 1.1%;
+    .texto_container3 {
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .texto_container3 h2 {
+        margin: 1% 0% 0% 0%;
         font-family: 'Times New Roman', Times, serif;
         font-size: 15px;
         padding: 0;
+        display: inline-block;
 
     }
 
-
-    .container3 img {
-        width: 88vw;
+    .img_container3 {
+        width: 100%;
         height: auto;
-        margin: 2% 5% 2% 5%;
         padding: 0%;
-        border-radius: 10%;
-        display: flex;
+        margin-top: 2%;
     }
 
-    .container3 h4 {
-        margin: 5% auto 1% auto;
-        /* Centrado automático  */
+
+    .img_container3 img {
+        width: 90vw;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .texto2_container3 {
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+
+    .texto2_container3 h4 {
+        margin: 5% 0% 4% 0%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 13px;
+        font-size: 20px;
         text-align: center;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
     }
 
-    .container3 p {
+    .texto2_container3 p {
         text-align: center;
         float: none;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 50px;
+        font-size: 40px;
         margin: 0% 5% 0% 5%;
     }
 
@@ -837,10 +948,16 @@ body {
         /* Espacio entre las cajas  */
         flex-wrap: wrap;
         /* Permite mover las cajas a la siguiente línea si es necesario  */
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+
         justify-content: center;
         /* Centra las cajas horizontalmente  */
-        margin: 30% 0% 0% 0%;
+        margin: 3% 0% 0% 0%;
         /* el margen top hay que revisarlo en la version final de movil */
+        padding-bottom: 10%;
+        background-color: green;
     }
 
     .caja2 {
@@ -849,27 +966,50 @@ body {
         /* Asegura que padding y border no afecten el tamaño  */
         max-width: 100vw;
         /* Ancho máximo para las cajas  */
-        max-height: 100vh;
-        margin: 0% 2% 0% 2%;
+        margin: 0% 2%;
 
     }
 
-    .caja2 img {
+    .imagen_cajas2 {
+        width: 100%;
+        /* Mantén el ancho basado en el contenedor padre */
+        padding-top: 56.25%;
+        /* Proporción 16:9 (puedes ajustarlo según necesites) */
+        position: relative;
+        /* Necesario para posicionar las imágenes */
+        overflow: hidden;
+        /* Esconde el contenido que se sale del contenedor */
+        border-radius: 10px;
+        /* Bordes redondeados */
+        margin-top: 2%;
+    }
+
+    .imagen_cajas2 img {
         width: 100%;
         height: 100%;
         margin: auto;
         /* Mantiene la proporción  */
         border-radius: 10px;
         /* Bordes redondeados  */
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .texto_caja2 {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        margin: 3% 0% 2% 0%;
+
 
     }
 
-    .caja2 p {
+    .texto_caja2 p {
         text-align: center;
         box-sizing: border-box;
-        width: 100%;
-        margin: 3% 0% 2% 0%;
-        font-size: 20px;
-
+        font-size: 25px;
     }
 }
