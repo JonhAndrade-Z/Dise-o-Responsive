@@ -70,8 +70,7 @@ body {
         word-spacing: 15px;
     }
 
-    .logo,
-    img {
+    .logo img {
         width: 15vw;
         height: 15vh;
         margin: 0% 0% 0% 5%;
@@ -128,34 +127,37 @@ body {
     }
 
     .imagen_gato {
-        width: 100vw;
-        height: 100%;
-        margin: 2% 0% 2% 2%;
+        width: 40vw;
+        height: auto;
+        margin: 2% 0% 2% 0%;
         padding: 0%;
-        /* float: left; */
-        border-radius: 10%;
-        display: flex;
+        float: left;
+    }
 
+    .imagen_gato img {
+        width: 100%;
+        height: auto;
+        border-radius: 10%;
 
     }
 
     .texto_principal {
         text-align: center;
-        margin: 10% 0% 0% 0%;
+        margin: 2% 2%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 19px;
-        padding: 2% 5% 0% 5%;
-        height: 100%;
-        float: left;
+        font-size: 25px;
+        height: auto;
+        width: 45%;
+        float: right;
 
     }
 
-    .container h1 {
-        margin: 10% 0% 0% 2%;
+    .texto_principal h1 {
+        margin: 2% 0% 5% 0%;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 15px;
+        font-size: 20px;
         padding: 0% 0% 0% 0%;
-        height: 50%;
+        height: 4%;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
@@ -204,57 +206,72 @@ body {
     }
 
     .container3 {
-        display: flex;
-        flex-direction: column;
+        display: contents;
         /* Acomoda los elementos en una sola columna */
         max-width: 100%;
+        max-height: auto;
         margin: 0% 5% 10% 5%;
-        align-items: center
     }
 
+    .texto_container3 {
+        align-items: center;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+       
+    }
+    .texto_container3 h2 {
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: 2px solid red;
+        padding-bottom: 4px;
+        display: inline-block;
+        margin-bottom: 1%;
+    }
     .linea2 {
         width: 90vw;
         display: flex;
         margin: 0% 0% 0% 2%;
     }
 
-    .container3 h2 {
-        margin: 5% 0% 1% 1.1%;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 15px;
-        padding: 0;
-        border-bottom: 2px solid red;
-        padding-bottom: 4px;
-        display: inline-block;
-    }
-
-
-    .container3 img {
-        width: 88vw;
-        height: 100vh;
+    .img_container3 {
+        width: 100%;
+        height: auto;
         margin: 2% 5% 2% 5%;
         padding: 0%;
-        border-radius: 10%;
+
+    }
+    .img_container3 img {
+        width: 88vw;
+        height: auto;
+        margin: 0;
+        padding: 0%;
+        border-radius: 15%;
         display: flex;
     }
-
-    .container3 h4 {
-        margin: 5% auto 1% auto;
-        /* Centrado automático */
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 13px;
+    .texto2_container3{
+        align-items: center;
+        justify-self: center;
         text-align: center;
+        width: 100%;
+        height: auto;
+        margin-top: 2%;
+    }
+    .texto2_container3 h4 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
         border-bottom: 2px solid red;
         padding-bottom: 4px;
         display: inline-block;
     }
 
-    .container3 p {
+    .texto2_container3 p {
         text-align: center;
         float: none;
         font-family: 'Times New Roman', Times, serif;
         font-size: 50px;
-        margin: 0% 5% 0% 5%;
+        margin: 0% 7% 0% 7%;
     }
 
     .cont4 {
