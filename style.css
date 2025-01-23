@@ -72,6 +72,8 @@ body {
         width: 15vw;
         height: 15vh;
         margin: 0% 0% 0% 5%;
+        cursor:pointer;
+
     }
 
     .botton_boletin {
@@ -213,7 +215,7 @@ body {
     .linea2 {
         width: 90vw;
         display: flex;
-        margin: 0% 0% 0% 2%;
+        margin: 0% 0% 0% 5%;
     }
 
     .texto_container3 {
@@ -238,7 +240,7 @@ body {
     .img_container3 {
         width: 100%;
         height: auto;
-        margin: 2% 5% 2% 5%;
+        margin: 0;
         padding: 0%;
 
     }
@@ -246,7 +248,7 @@ body {
     .img_container3 img {
         width: 88vw;
         height: auto;
-        margin: 0;
+        margin: 3% auto 0% auto;
         padding: 0%;
         border-radius: 15%;
         display: flex;
@@ -320,7 +322,7 @@ body {
     }
 
     .texto_caja2 {
-        margin: 0;
+        margin-bottom: 3%;
         padding: 0;
         box-sizing: border-box;
         display: flex;
@@ -330,6 +332,25 @@ body {
     .texto_caja2 p {
         text-align: center;
         font-size: 20px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        background-color: #b42436;
+        justify-content: space-between;
+        width: 100vw;
+        height: 20vh;
+        padding: 0;
+        margin: 0;
+        position: static;
+        overflow: none;
+    }
+
+    .logo img {
+        width: 15vw;
+        height: 15vh;
+        margin: 0% 0% 0% 26%;
     }
 }
 
@@ -429,7 +450,7 @@ body {
     .botton_suscribete {
         width: 6%;
         height: 20%;
-        margin: 8% 0% 0% 6%;
+        margin: 8% 0% 0% 55%;
         color: rgb(255, 255, 255);
         background-color: #b42436;
         border-bottom: #b42436;
@@ -664,6 +685,24 @@ body {
         text-align: center;
         font-size: 20px;
     }
+    footer {
+        display: flex;
+        align-items: center;
+        background-color: #b42436;
+        justify-content: space-between;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        position: static;
+        overflow: none;
+    }
+
+    .logo img {
+        width: 15vw;
+        height: 15vh;
+        margin: 0% 0% 0% 26%;
+    }
 
 }
 
@@ -732,6 +771,8 @@ body {
         width: 50vw;
         height: auto;
         margin: 0% 0% 0% 50%;
+        cursor:pointer;
+
     }
 
     .botton_boletin {
@@ -980,5 +1021,26 @@ body {
         text-align: center;
         box-sizing: border-box;
         font-size: 25px;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        background-color: #b42436;
+        justify-content: space-between;
+        width: 100vw;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        position: static;
+        overflow: none;
+    }
+
+    .logo img {
+        width: 50vw;
+        height: auto;
+        margin: 0% 0% 0% 50%;
+        cursor:pointer;
+
     }
 }
